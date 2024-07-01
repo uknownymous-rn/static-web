@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", monospace;
+  /* background-image: url(images/bg.jpg); */
+}
+
+body {
+  background-image: url(images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.head{
+    font-size: 60px;
+    color: rgb(61, 110, 201);
+}
+.header {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  /* width: 200px;
+    height: 120px; */
+  cursor: default;
+  border-radius: 15vh;
+  width: 30vh;
+  height: auto;
+}
+
+.header ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.header ul li a {
+  text-decoration: none;
+  /* color: #fff; */
+  color: blueviolet;
+  text-transform: uppercase;
+  font-size: 3vh;
+}
+
+.header ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.container{
+    margin-bottom: 100px;
+    width: 85%;
+    margin-left: 7.5%;
+    /* margin: auto; */
+}
+
+.header ul li:hover::after {
+  width: 100%;
+}
+
+.card {
+
+  /* width: 200px; */
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  height: auto;
+  display: grid;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  /* background-image: url(images/cic.png); */
+  /* background-color: aqua; */
+  align-items: center;
+  /* text-align: justify; */
+  /* justify-content: space-evenly; */
+  transition: transform 0.3s ease;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+.card p {
+  text-align: justify;
+}
+.card:hover{
+    transform: translateY(-10px) ;
+  }
+.footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  cursor: default;
+  padding: 20px;
+  /* justify-content: space-between; */
+  background-color: #009688;
+  /* font-size: ; */
+}
+
+.subcontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+}
